@@ -11,6 +11,7 @@
     margin-top: 10px;
 }
 
+
 .nav-item {
     margin-right: 20px;
     font-weight: 700;
@@ -434,6 +435,7 @@ h2 {
     margin-top: 40px;
     margin-bottom: 40px;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .mm_line {
@@ -457,9 +459,40 @@ h2 {
     height: auto; 
 }
 
+
 /* Mobile */
 
 @media (max-width: 480px) {
+
+    
+.navbar {
+    display: none;
+    flex-direction: column;
+}
+.navbar.show {
+    display: flex;
+}
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        text-align: center;
+        animation: fadeIn 0.5s ease-in-out;
+    }
+    
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
     .menuMobile {
         display: flex;
@@ -467,6 +500,7 @@ h2 {
         flex-direction: column;
         justify-content: space-around;
         margin-right: 30px;
+        
     }
     
     .container-menu, .navbar {
@@ -482,7 +516,7 @@ h2 {
     .first-section {
         flex-direction: column;
         height: 100vh;
-        margin-top: 100px;
+        margin-top: 150px;
     }
 
     .vex {
@@ -592,6 +626,7 @@ h2 {
     .first-section {
         height: 100vh;
         padding: 50px;
+        margin-top: 150px;
     }
 
     body {
@@ -632,6 +667,7 @@ h2 {
         height: 100vh;
         padding: 50px;
         margin-right: 50px;
+        margin-top: 150px;
     }
 
     body {
@@ -681,6 +717,7 @@ h2 {
     .first-section {
         height: 100vh;
         padding: 100px;
+        margin-top: 150px;
     }
 
     h2 {

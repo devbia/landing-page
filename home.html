@@ -245,6 +245,20 @@
         <p class="copy">Copyright © Criado apenas para estudo| Todos os direitos reservados.</p>
     </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the necessary elements
+            var menuMobile = document.querySelector('.menuMobile');
+            var navbar = document.querySelector('.navbar');
+
+            // Add a click event listener to the menuMobile element
+            menuMobile.addEventListener('click', function () {
+                // Toggle the 'show' class on the navbar element
+                navbar.classList.toggle('show');
+            });
+        });
+    </script>
         
 </body>
 </html>
